@@ -1,0 +1,144 @@
+.field{
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin: 20vh auto;
+  width: 25%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 0px solid blue;
+}
+.XO{
+  background-color: white;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.o1{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  animation-name: background;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background{
+  0%{
+    
+    background-color: none;
+  }
+  
+  100%{
+    background-color: #5d5aff;
+  }
+}
+
+.o2{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  left: 0;
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.x{
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.x1{
+  transform: rotate(45deg);
+  height: 8px;
+  background-color: #ff0900;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: auto;
+  animation-name: xanim;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.x2{
+  border-radius: 2px;
+  background-color: #ff0900;
+  transform: rotate(315deg);
+  height: 8px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  animation-name: xanim;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes xanim{
+  0%{
+    width: 0px;
+  }
+  
+  100%{
+    width: 80px;
+    margin-top: 40px;
+  }
+}
+
+#first{
+    border-bottom: black solid 1px;
+    border-right: black solid 1px;
+}
+
+#second{
+    border-bottom: black solid 1px;
+}
+
+#third{
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+}
+
+#fourth{
+  border-right: black solid 1px;
+  border-bottom: black solid 1px;
+}
+
+#fifth{
+  border-bottom: black solid 1px;
+}
+
+#sixth{
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+
+}
+
+#seventh{
+  border-right: black solid 1px;
+}
+
+
+#ninth{
+  border-left: black solid 1px;
+}
